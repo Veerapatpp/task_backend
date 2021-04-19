@@ -43,6 +43,6 @@ server.listen(app.get('port'),function(){
 
 // ---------------not complete user login -------------------------
 
-app.listen()
-app.listen(4000, () => console.log('server up'));
+const PORT = process.env.PORT || 4000
+app.listen(PORT, () => console.log('server up'));
 
