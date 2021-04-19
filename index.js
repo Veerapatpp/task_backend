@@ -28,6 +28,7 @@ app.use(morgan('short'))
 app.get("/",(req,res) => {
 
     console.log("Respone to root ")
+    res.send("hello")
 })
 app.use(authRoute);
 app.use(userrouter)
